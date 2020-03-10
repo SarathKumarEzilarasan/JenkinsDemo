@@ -11,7 +11,7 @@ pipeline {
                 sh 'curl -u $SERVICE_CREDS https://myservice.example.com'
             }
         }
-        stage('Example Username/Password') {
+        stage('Example Username/Passwords') {
             environment {
                 SSH_CREDS = credentials('my-prefined-ssh-creds')
             }
